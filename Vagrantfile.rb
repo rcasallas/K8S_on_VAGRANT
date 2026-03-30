@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
       # Configurar el hostname para cada VM
       vm.vm.hostname = "vm#{i}"
 
-      # Configurar red privada para comunicación entre nodos
+      # Configurar red privada para comunivirtcación entre nodos
       vm.vm.network "private_network", ip: "#{PRIVATE_NETWORK_IP_BASE}1#{i}"
 
       # Configurar el proveedor VirtualBox
