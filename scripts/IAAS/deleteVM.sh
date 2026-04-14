@@ -27,6 +27,7 @@ if [[ "$VMNAME1" == "$NAMEVM" ]]; then
             echo "Intentando matar el proceso de la VM (PID: $PID)..."
             if kill -9 "$PID" 2>> "$LOG_FILE"; then
                 echo "Proceso de la VM matado correctamente."
+                vboxmanage unregistervm "$NAMEVM" --delete 2>> "$LOG_FILE"
             else
                 echo "Error crítico: Revisa los logs $LOG_FILE -> KILLING_VM_PROCESS"
             fi

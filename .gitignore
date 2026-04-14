@@ -9,3 +9,4 @@ dynamic/*
 *key*
 scripts/IAAS/myKey
 scripts/IAAS/MyPersonalKey
+scripts/IAAS/ERRORS_VM.txt
