@@ -1,0 +1,6 @@
+variant: fcos
+version: 1.7.0
+ignition:
+  config:
+    replace:
+      source: ${PROTO_HTTP_IGNITION}://${IP_ADDRESS_HTTP_IGNITION}:${PORT_HTTP_IGNITION}/${CONFIG_IGNITION_FILENAME}

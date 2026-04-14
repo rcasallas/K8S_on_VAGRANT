@@ -4,8 +4,8 @@ Este proyecto configura 3 máquinas virtuales (VMs) usando Vagrant y VirtualBox,
 
 ## Requisitos
 
-- [Vagrant](https://www.vagrantup.com/) instalado
-- [VirtualBox](https://www.virtualbox.org/) instalado
+- [Butane](https://docs.fedoraproject.org/en-US/fedora-coreos/producing-ign/#_installing_via_distribution_packages) instalado via distribution Package 
+- [VirtualBox](https://www.virtualbox.org/) instalado desde la URL de ORACLE.
 - Conexión a internet para descargar la caja de Fedora CoreOS
 
 ## Configuración de las VMs
@@ -49,6 +49,8 @@ Cada VM tiene las siguientes especificaciones:
 - La primera ejecución puede tomar tiempo debido a la descarga de la caja.
 - Asegúrate de que VirtualBox esté configurado correctamente en tu sistema.
 - Fedora CoreOS es un sistema operativo minimalista diseñado para contenedores, por lo que algunas herramientas tradicionales pueden no estar disponibles por defecto.
+- Este proyecto no incluye un archivo Butane/Ignition; la configuración se aplica mediante los scripts en `scripts/`.
+- Los scripts se montan en las VMs en `/vagrant/scripts`.
 
 ## Troubleshooting
 
